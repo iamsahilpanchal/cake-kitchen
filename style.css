@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/*navbar styling*/
+.navbar{
+    box-shadow: 0 0 5px grey;
+    position: fixed;
+    padding: 20px 0;
+    width: 100%;
+    color: #ff69b4;
+    background-color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    color: #ff69b4;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+    color: #ff69b4;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: all 0.3s ease;
+}
+
+.navbar .menu li:hover a{
+    color: black;
+}
+
+/*home section styling*/
+.home{
+    padding: 100px 0;
+    background-size: 100rem;
+    height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max-width{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.home .home-content .text-1{
+    color: #ff69b4;
+    font-size: 65px;
+    text-align: center;
+}
+
+.home .home-content .text-1 span{
+    color: #fc3598;
+    font-weight: 500;
+    text-align: center;
+}
+
+.home .home-content a{
+    display: inline-block;
+    background: #ff69b4;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 15px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #ff69b4;
+    transition: all 0.3s ease;    
+}
+
+.home .home-content a:hover{
+    color: #ff69b4;
+    background: none;
+}
+
+/*update section styling*/
+.update{
+    padding: 100px 0;
+    font-family: 'Poppins', sans-serif;
+    background: whitesmoke;
+}
+
+.update .title{
+    text-decoration: underline;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.update .update-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.update .update-content .left{
+    width: 45%;
+}
+
+.update .update-content .left img{
+    width: 60%;
+    object-fit: cover;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.update .update-content .left img:hover{
+    opacity: 0.7;
+}
+
+.update .update-content .right{
+    width: 55%;
+}
+
+.update .update-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.update .update-content .right .text span{
+    color: #ff69b4;
+}
+
+.update .update-content .right p{
+    text-align: justify;
+}
+
+.update .update-content .right a{
+    display: inline-block;
+    background-color: #ff69b4;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #ff69b4;
+    transition: all 0.3s ease;    
+}
+
+.update .update-content .right a:hover{
+    color: #ff69b4;
+    background: none;
+}
+
+.update .update-content .column{
+    width: 50%;
+}
+
+/* about section styling */
+.about{
+    padding: 100px 0;
+    font-family: 'Poppins', sans-serif;
+    background: whitesmoke;
+    box-shadow: 0 0 5px grey;
+}
+
+.about .title{
+    text-decoration: underline;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .about-content .column{
+    width: calc(50% - 30px);
+}
+
+.about .about-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .left .p{
+    text-align: justify;
+}
+
+.about .about-content .left a{
+    display: inline-block;
+    background-color: #ff69b4;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #ff69b4;
+    transition: all 0.3s ease;    
+}
+
+.about .about-content .left a:hover{
+    color: #ff69b4;
+    background: none;
+}
+
+.about .about-content .right .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right .p{
+    text-align: justify;
+}
+
+/*service section styling*/
+.gallery{
+    color: white;
+    background-color: black;
+    padding: 100px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.gallery .title{
+    position: relative;
+    text-decoration: underline;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.gallery .gallery-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gallery .gallery-content .card{
+    width: calc(25% - 15px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.gallery .gallery-content .card:hover{
+    color: black;
+    background: #ff69b4;
+}
+
+.gallery .gallery-content .card i{
+    font-size: 40px;
+    color: #ff69b4;
+    transition: color 0.3s ease;
+}
+
+.gallery .gallery-content .card:hover i{
+    color: black;
+}
+
+.gallery .gallery-content .card .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 15px 0 10px 0;
+    text-decoration: solid;
+}
+
+.gallery .gallery-content .card p{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.gallery .gallery-content .card .box{
+    transition: all 0.3s ease;
+}
+
+.gallery .gallery-content .card:hover .box{
+    transform: scale(1.05);
+}
+
+/* contact styling started */
+
+.contact{
+    padding: 65px;
+    background-color: whitesmoke;
+}
+
+.contact .form .card {
+    width: 100%;
+    padding-top: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+  
+.contact .form .card h2 {
+    color: black;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: underline;
+}
+  
+.contact .form .card .row {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid: auto / auto auto;
+    grid-template-columns: repeat(auto-fit,minmax(40%, 1fr));
+    grid-gap: 5px;
+}
+  
+.contact .form .card .row .col {
+    position: relative;
+    width: 100%;
+    margin: 30px 20px 40px 0;
+    transition: 0.3s;
+}
+  
+.contact .form .card .row .form-group {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: black;
+}
+  
+.contact .form .card .row .form-group input,
+.contact .form .card .row .form-group textarea {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    font-size: 24px;
+    padding: 10px 0 10px 20px;
+    border: 2px solid black;
+    color: black;
+    border-radius: 5px;
+}
+  
+.contact .form .card .row .form-group label {
+    line-height: 40px;
+    color: black;
+    font-size: 24px;
+    margin: 0 0 0 30px;
+    display: block;
+    pointer-events: none;
+}
+  
+.contact .form .row .col:nth-child(6) {
+    margin-top: 64px;
+}
+  
+.contact .form .card .row .form-group input:focus,
+.contact .form .card .row .form-group textarea:focus {
+    border: 3px solid #fc3598;
+    transition: all 0.3s;
+}
+  
+.contact .form .card .row input[type="submit"] {
+    border: 3px solid #fc3598;
+    padding: 10px;
+    height: 100%;
+    width: 30%;
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: #fc3598;
+    line-height: 24px;
+    font-size: 24px;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+  
+.contact .form .card .row input[type="submit"]:hover {
+    border: 3px solid #fc3598;
+    background-color: white;
+    color: #fc3598;
+    transition: all 0.3s;
+}
+
+.contact .contact-text{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.contact .contact-text a{
+    color: #fc3598;
+    text-align: center;
+    font-size: 35px;
+    padding: 25px;
+    justify-content: space-between;
+}
+
+.contact .contact-text a:hover{
+    color: black;
+}
+
+.contact .title{
+    text-decoration: underline;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact .contact-content .left{
+    width: 60%;
+}
+
+.contact .contact-content .left iframe{
+    align-items: center;
+    border-radius: 10px;
+}
+
+.contact .contact-content .right{
+    width: 40%;
+}
+
+.contact .contact-content .right .call{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.contact .contact-content .right a{
+    display: inline-block;
+    background-color: #ff69b4;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 2.5px 8px;
+    border-radius: 6px;
+    border: 2px solid #ff69b4;
+    transition: all 0.3s ease;    
+}
+
+.contact .contact-content .right a:hover{
+    color: #ff69b4;
+    background: none;
+}
+
+.contact .contact-content .right .address{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.contact .contact-content .right p{
+    text-align: justify;
+}
+
+.contact .contact-text{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.contact .contact-text a{
+    color: black;
+    text-align: center;
+    font-size: 35px;
+    padding: 25px;
+    justify-content: space-between;
+}
+
+.contact .contact-text a:hover{
+    color: #ff69b4;
+}
+
+/* footer styling started */
+footer{
+    padding: 10px;
+    text-align: center;
+    font-size: medium;
+    font-family: 'Poppins', sans-serif;
+    font-weight:900;
+    color: black;
+    background-color: #ff69b4;
+}
